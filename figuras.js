@@ -1,67 +1,43 @@
-// Codigo del cuadradio
-console.group("Cuadrados");
+// Codigo del cuadradio======================
+// const perimetroCuadrado = ladoCuadrado * 4;
+function perimetroCuadrado(lado){
+    return lado * 4;
+}
 
-const ladoCuadrado = 5;
-console.log("Los lados del cuadrado miden: "+ ladoCuadrado + "cm");
+// const areaCuadrado = ladoCuadrado * ladoCuadrado;
+function areaCuadrado(lado){
+    return lado * lado;
+}
 
-const perimetroCuadrado = ladoCuadrado * 4;
-console.log("El perimetro del Cuadrado es: "+ perimetroCuadrado + "cm");
+// Codigo del triangulo=========================
+// const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
+function perimetroTriangulo(lado1, lado2, base){
+    return lado1+lado2+base;
+}
 
-const areaCuadrado = ladoCuadrado * ladoCuadrado;
-console.log("El Area del Cuadrado es: "+ areaCuadrado + "cm²");
-console.groupEnd();
+// const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+function areaTriangulo(base, altura){
+    return (base * altura) / 2;
+}
 
-console.group("Triangulos");
-// Codigo del triangulo
-const ladoTriangulo1 = 6;
-const ladoTriangulo2 = 6;
-const baseTriangulo = 4;
-
-console.log(
-    "Los lados del triangulo miden: "
-    + ladoTriangulo1 + "cm, " 
-    + ladoTriangulo1 + "cm, "
-    + baseTriangulo + "cm"
-);
-
-const alturaTriangulo = 5.5;
-console.log("La altura del triangulo es de: "+ alturaTriangulo + "cm");
-
-
-const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
-console.log("El perimetro del Triangulo es: "+ perimetroTriangulo + "cm");
-
-const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
-console.log("El Area del Triangulo es: "+ areaTriangulo + "cm²");
-console.groupEnd();
-
-
-
-// Circulos
-console.group("Cuadrados");
-
-// radio
-const radioCirculo = 4;
-console.log("El radio del circulo es: " + radioCirculo + "cm");
-
+// Circulos==========================================
 // diametro 
-const diametroCirculo = radioCirculo * 2;
-console.log("El diamaetro del circulo es: " + diametroCirculo + "cm");
-
-// pi 3.1415
-const PI = Math.PI;
-console.log("PI es: " + PI      );
+// const diametroCirculo = radioCirculo * 2;
+function diametroCirculo(radio){
+    return radio * 2;
+}
 
 // circunferencia 
-const perimetroCirculo = diametroCirculo * PI;
-console.log("El perimetro del circulo es: " + perimetroCirculo + "cm");
+// const perimetroCirculo = diametroCirculo * PI;
+function perimetroCirculo(radio){
+    return diametroCirculo(radio) * Math.PI
+}
 
 // area 
-const areaCirculo = (radioCirculo * radioCirculo) * PI;
-console.log("El area del circulo es: " + areaCirculo + "cm²");
-
-console.groupEnd();
-
+// const areaCirculo = (radioCirculo * radioCirculo) * PI;
+function areaCirculo(radio){
+    return (radio * radio) * Math.PI
+}
 
 
 
