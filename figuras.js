@@ -11,14 +11,28 @@ function areaCuadrado(lado){
 
 // Codigo del triangulo=========================
 // const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
+function verificaTriangulo(lado1, lado2, base){
+    if (lado1 === lado2 && lado1 != base){
+        return true; // si es isosceles
+    }
+    return false; // mo es isosceles
+}
 function perimetroTriangulo(lado1, lado2, base){
     return lado1+lado2+base;
 }
 
 // const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
-function areaTriangulo(base, altura){
-    return (base * altura) / 2;
+function areaTriangulo(lado , base){
+    return (base * encuentraAltura(lado, base)) / 2;
 }
+
+// calcula la atura de un triangulo utilizando el teorema de PITAGORAS
+function encuentraAltura (lado , base){ 
+    return (Math.sqrt((lado **2) - ((base/2) ** 2)));
+    
+}
+
+
 
 // Circulos==========================================
 // diametro 
@@ -36,8 +50,11 @@ function perimetroCirculo(radio){
 // area 
 // const areaCirculo = (radioCirculo * radioCirculo) * PI;
 function areaCirculo(radio){
-    return (radio * radio) * Math.PI
+    return (radio ** 2) * Math.PI;
 }
+
+
+
 
 
 
