@@ -4,12 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Figuras Geometricas | Curso Practico de JS</title>
 </head>
 <body>
-    <h1>
-        Figuras Geometricas.
-    </h1>
+    <header>
+        <h1 class="title">
+            Figuras Geometricas
+        </h1>        
+    </header>
+
+    <main class="main">
+        <!-- square  -->
+        <div class="square">
+            <div class="square-image">
+                <img src="./images/square.png" alt="">
+            </div>
+            <div class="square-form">
+                <p><strong><h3>Cuadrado</h3></strong></p>
+                <form action="">
+                    <label for="inputCuadrado">
+                        Escribe cuanto mide cada lado de tu cuadardo 
+                    </label>
+                    <input type="number" id="inputCuadrado">
+                    <select name="type" id="medida">
+                        <option value="cm" selected >cm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                    </select>
+                    <br>
+                    <button type="button" onclick="calcularPerimetroSquare()">
+                        Perimetro
+                    </button>
+                    <button type="button" onclick="calcularAreaSquare()">
+                        Area
+                    </button>
+                    <p id="respCuadrado">
+                        
+                    </p>
+                </form>
+            </div>
+        </div>
+        <!-- triangle  -->
+        <div class="triangle">
+            <div class="triangle-image">
+                <img src="./images/triangle.png" alt="">
+            </div>
+            <div class="triangle-form">
+                <p><strong><h3>Triangulo Isosceles</h3></strong></p>
+                <form action="">
+                    <label for="inputTriangulo1">
+                        Escribe cuanto mide el lado A del triangulo 
+                    </label>
+                    <input type="number" id="inputTriangulo1">
+                    <br>
+                    <label for="inputTriangulo1">
+                        Escribe cuanto mide el lado B del triangulo 
+                    </label>
+                    <input type="number" id="inputTriangulo2">
+                    <br>
+                    <label for="base">
+                        Escribe cuanto mide la base del triangulo 
+                    </label>
+                    <input type="number" id="base">
+                    <br>
+                    <label for="medidaTriangulo">Seleccione la medida</label>
+                    <select name="typeTriangulo" id="medidaTriangulo">
+                        <option value="cm" selected >cm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                    </select>
+                    <br>
+                    <button type="button" onclick="calcularPerimetroTriangle()">
+                        Perimetro
+                    </button>
+                    <button type="button" onclick="calcularAreaTriangle()">
+                        Area
+                    </button>
+                    <p id="respTriangulo">
+                        
+                    </p>
+                </form>
+            </div>
+        </div>
+        <!-- circle  -->
+        <div class="circle">
+            <div class="circle-image">
+                <img src="./images/circle.png" alt="">
+            </div>
+            <div class="circle-form">
+                <p><strong><h3>Circulo</h3></strong></p>
+                <form action="">
+                    <label for="inputCuadrado">
+                        Escribe el radio del circulo
+                    </label>
+                    <br>
+                    <input type="number" id="inputCirculo">
+                    <select name="typeCirculo" id="medidaCirculo">
+                        <option value="cm" selected >cm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                    </select>
+                    <br>
+                    <button type="button" onclick="calcularPerimetroCircle()">
+                        Perimetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCircle()">
+                        Area
+                    </button>
+                    <p id="respCirculo">
+                        
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class=" footer">
+        <p>Made with love ♥ by <strong>DANIEL Q </strong></p>
+    </footer>
 
     <script src="./figuras.js"></script>
 </body>
