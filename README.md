@@ -8,3 +8,9 @@ Curso Practico de JavaScipt
 - 2do. paso: Implementar las formulas en javascipt
 - 3er. paso: Crear funciones.
 - 4to. paso: integrar JS con HTML
+
+#Taller #3 Promedio, mediana y moda.
+- 1er. paso: Definir las formulas.
+- 2do. paso: Implementar las formulas en javascipt
+- 3er. paso: Crear funciones.
+- 4to. paso: integrar JS con HTML
