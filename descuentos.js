@@ -24,12 +24,11 @@ const muestraCupones = function (){
 }
 function calculateDiscount (price, discount){
     let cupon = verificaCupon();
-    let finalPrice = ((price * (100 - discount)) / 100) - cupon; 
-    // return finalPrice;
+    let finalPrice = ((price * (100 - discount)) / 100) - cupon;
     console.log(finalPrice);
     idPrecio.innerHTML = price + "$";
     idDescuento.innerHTML = discount + "%";
-    idResCupon.innerHTML = cupon + " $";
+    idResCupon.innerHTML = cupon + "$ de descuento";
     idTotal.innerHTML = finalPrice + "$";
 }
 
