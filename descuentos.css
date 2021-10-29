@@ -24,22 +24,38 @@
     /* -- */
 }
 .main-image{
-    width: 400px;
-    height: 400px;
+    width:  500px;
+    height: 500px;
+    background-image: url(./images/descuentos.jpg);
     border: black 5px solid;
     border-radius: 20px;
-
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
 
 }
-.main-image img{
-    width: 100%;
-}
-
-.main-discount{
+.main-shopping{
     width: 400px;
-    height: 400px;
+    min-height: 300px;
     border: black 2px solid;
     border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-shopping_precios, .main-shopping_descuentos, .main-shopping_total{
+    border-bottom: 2px rgb(122, 122, 122) solid;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.main-shopping_codigo{
+    border-bottom: 2px rgb(122, 122, 122) solid;
+    padding-bottom: 5px;
 }
  
 

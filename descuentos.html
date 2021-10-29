@@ -12,15 +12,37 @@
     <header class="header">
         <h1>Porcentajes y Descuentos</h1>
     </header>
-
+    
     <main class="main">
         <div class="main-image">
-            <img src="./images/descuentos.jpg" alt="">
+            <div>
+                <ul id="losCupones">
+                    <h2>Cupones que puedes usar</h2> 
+                 </ul>
+            </div>
         </div>
-        <div class="main-discount">
-            <form action="" class="formulary">
-                
-            </form>
+        <div class="main-shopping">
+            <div class="main-shopping_precios">
+                <h3>Precio:</h3>
+                <span id="precioInicial"></span>
+            </div>
+            <div class="main-shopping_descuentos">
+                <h3>Descuento:</h3>
+                <span id="descuento"></span>
+            </div>
+            <div class="main-shopping_codigo">
+                <label for="cupon"><h3>Codigo Promocional:</h3></label>
+                <input type="text" id="cupon">
+                <button type="button" id="boton">
+                    verificar
+                </button>
+                <span id="resultadoCupon"></span>
+            </div>
+            <div class="main-shopping_total">
+                <h3>Total:</h3>
+                <strong><span id="total"></span></strong>
+            </div>          
+              
         </div>
     </main>
 
