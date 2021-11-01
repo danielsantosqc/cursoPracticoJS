@@ -6,6 +6,7 @@ const lista1 = [
   500
 ];
 
+<<<<<<< HEAD
 
 function calculaMediaAritmerica(listArray){
 
@@ -31,3 +32,13 @@ function calculaMediaAritmerica(listArray){
   let promedioLista = sumaLista1 / lista1.length;
   return promedioLista;
 }
+=======
+let sumaLista1 = 0;
+ for(let i = 0; i < lista1.length; i++){
+   sumaLista1 = sumaLista1 + lista1[i];
+   console.log(sumaLista1);
+ }
+
+let promedioLista = sumaLista1 / lista1.length;
+console.log("media es : " + promedioLista );
+>>>>>>> 079a62be31e5bd86861274fed68202d26809345e
